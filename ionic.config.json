@@ -1,6 +1,6 @@
 {
   "name": "ptotoday-live-mobileapp",
-  "app_id": "",
+  "app_id": "5872d6b8",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}

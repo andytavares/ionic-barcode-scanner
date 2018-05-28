@@ -1,17 +1,17 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>Barcode Scanner Demo</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <h1>
+    <button ion-button color="primary" (click)="scan()">Start Scanner</button>
+
+    <button ion-button color="danger" (click)="clear()">Clear Last Scan</button>
+  </h1>
+
+  <h1>Last UPC Scanned: {{ lastScan.text }} </h1>
+  <h1>Last Scanned UPC Type: {{ lastScan.format }} </h1>
+
 </ion-content>

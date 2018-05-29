@@ -8,7 +8,10 @@ import { BarcodeScanner } from "@ionic-native/barcode-scanner";
   templateUrl: "home.html"
 })
 export class HomePage {
-  public lastScan: Object = {};
+  public lastScan: Object = {
+    text: "N/A",
+    format: "N/A"
+  };
   constructor(
     public navCtrl: NavController,
     private barcodeScanner: BarcodeScanner,
